@@ -3,6 +3,7 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "EditorConfig.EditorConfig",
                 "mads-hartmann.bash-ide-vscode"
             ]
         }
