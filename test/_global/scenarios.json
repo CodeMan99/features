@@ -1,12 +1,12 @@
 {
-    "color_and_hello": {
+    "circleci_and_exercism": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "color": {
-                "favorite": "purple"
+            "circleci-cli": {
+                "destdir": "/usr/bin/"
             },
-            "hello": {
-                "greeting": "Greetings"
+            "exercism-cli": {
+                "destdir": "/usr/bin/"
             }
         }
     }

@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "version" bash -c "exercism"
+check "version" bash -c "exercism version"
 
 reportResults

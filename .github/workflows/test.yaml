@@ -13,8 +13,8 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - circleci-cli
+          - exercism-cli
         baseImage:
           - debian:latest
           - ubuntu:latest
