@@ -1,0 +1,41 @@
+{
+    "name": "Exercism CLI",
+    "id": "exercism-cli",
+    "version": "1.0.0",
+    "description": "Install the exercism-cli.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Specify what version to install.",
+            "type": "string"
+        },
+        "destdir": {
+            "default": "/usr/local/bin/",
+            "description": "Filesystem location of the exercism binary.",
+            "type": "string"
+        },
+        "os": {
+            "default": "linux",
+            "description": "Specify the target operating system.",
+            "enum": [
+                "darwin",
+                "freebsd",
+                "linux",
+                "openbsd"
+            ],
+            "type": "string"
+        },
+        "arch": {
+            "default": "x86_64",
+            "description": "Specify the target CPU architecture.",
+            "enum": [
+                "armv5",
+                "armv6",
+                "i386",
+                "ppc64",
+                "x86_64"
+            ],
+            "type": "string"
+        }
+    }
+}
