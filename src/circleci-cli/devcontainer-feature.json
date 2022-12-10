@@ -1,0 +1,25 @@
+{
+    "name": "CircleCI CLI",
+    "id": "circleci-cli",
+    "version": "1.0.0",
+    "description": "Install the CircleCI CLI.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Specify what version to install.",
+            "type": "string"
+        },
+        "destdir": {
+            "default": "/usr/local/bin/",
+            "description": "Filesystem location of the circleci binary.",
+            "type": "string"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "circleci.circleci"
+            ]
+        }
+    }
+}
