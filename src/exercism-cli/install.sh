@@ -23,6 +23,25 @@ if [[ -z "$VERSION" ]] || [[ "$VERSION" = "latest" ]]; then {
     VERSION=$(curl -sLI -o /dev/null -w '%{url_effective}' "$LATEST_URL" | cut -d "v" -f 2)
 } fi
 
+apt_get_update()
+{
+    if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+        echo "Running apt-get update..."
+        apt-get update -y
+    fi
+}
+
+# Checks if packages are installed and installs them if not
+check_packages() {
+    if ! dpkg -s "$@" > /dev/null 2>&1; then
+        apt_get_update
+        apt-get -y install --no-install-recommends "$@"
+    fi
+}
+
+export DEBIAN_FRONTEND=noninteractive
+check_packages curl
+
 echo "Installing exercism-cli: v${VERSION}"
 
 RELEASE_URL="${GITHUB_BASE_URL}/releases/download/v${VERSION}/exercism-${VERSION}-${OS}-${ARCH}.tar.gz"
