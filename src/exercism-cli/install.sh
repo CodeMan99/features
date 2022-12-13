@@ -40,7 +40,7 @@ check_packages() {
 }
 
 export DEBIAN_FRONTEND=noninteractive
-check_packages curl
+check_packages coreutils curl tar
 
 echo "Installing exercism-cli: v${VERSION}"
 
