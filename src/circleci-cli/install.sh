@@ -27,6 +27,6 @@ check_packages() {
 }
 
 export DEBIAN_FRONTEND=noninteractive
-check_packages curl
+check_packages curl ca-certificates
 
 curl -fLSs https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/install.sh | bash

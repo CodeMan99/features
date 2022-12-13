@@ -36,7 +36,7 @@ check_packages() {
 }
 
 export DEBIAN_FRONTEND=noninteractive
-check_packages curl
+check_packages curl ca-certificates
 
 if [[ -z "$VERSION" ]] || [[ "$VERSION" = "latest" ]]; then {
     VERSION=$(curl -sLI -o /dev/null -w '%{url_effective}' "$LATEST_URL" | cut -d "v" -f 2)
