@@ -19,10 +19,6 @@ DESTDIR="${DESTDIR:-/usr/local/bin}"
 OS="${OS:-linux}"
 ARCH="${ARCH:-x86_64}"
 
-if [[ -z "$VERSION" ]] || [[ "$VERSION" = "latest" ]]; then {
-    VERSION=$(curl -sLI -o /dev/null -w '%{url_effective}' "$LATEST_URL" | cut -d "v" -f 2)
-} fi
-
 apt_get_update()
 {
     if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
@@ -40,7 +36,11 @@ check_packages() {
 }
 
 export DEBIAN_FRONTEND=noninteractive
-check_packages coreutils curl tar
+check_packages curl
+
+if [[ -z "$VERSION" ]] || [[ "$VERSION" = "latest" ]]; then {
+    VERSION=$(curl -sLI -o /dev/null -w '%{url_effective}' "$LATEST_URL" | cut -d "v" -f 2)
+} fi
 
 echo "Installing exercism-cli: v${VERSION}"
 
