@@ -1,4 +1,5 @@
 
+
 # CircleCI CLI (circleci-cli)
 
 Install the CircleCI CLI. Also installs the CircleCI extension for vscode.
@@ -17,6 +18,7 @@ Install the CircleCI CLI. Also installs the CircleCI extension for vscode.
 |-----|-----|-----|-----|
 | version | Specify what version to install. | string | latest |
 | destdir | Filesystem location of the circleci binary. | string | /usr/local/bin/ |
+| completions | Attempt to install shell completions for bash & zsh. | boolean | true |
 
 # CircleCI CLI
 
