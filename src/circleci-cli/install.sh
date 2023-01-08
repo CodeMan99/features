@@ -27,6 +27,17 @@ check_packages() {
 }
 
 export DEBIAN_FRONTEND=noninteractive
-check_packages curl ca-certificates
+check_packages curl ca-certificates bash-completion
 
 curl -fLSs https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/install.sh | bash
+
+if [ "$COMPLETIONS" = "true" ]; then {
+    # circleci bash completion
+    mkdir -p /etc/bash_completion.d
+    circleci completion bash > /etc/bash_completion.d/circleci
+
+    # circleci zsh completion
+    if [ -e "/usr/share/zsh/vendor-completions" ]; then
+        circleci completion zsh > /usr/share/zsh/vendor-completions/_circleci
+    fi
+} fi

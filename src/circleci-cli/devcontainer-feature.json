@@ -13,6 +13,11 @@
             "default": "/usr/local/bin/",
             "description": "Filesystem location of the circleci binary.",
             "type": "string"
+        },
+        "completions": {
+            "default": true,
+            "description": "Attempt to install shell completions for bash & zsh.",
+            "type": "boolean"
         }
     },
     "customizations": {
