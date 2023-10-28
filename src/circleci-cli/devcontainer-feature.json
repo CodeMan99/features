@@ -1,7 +1,7 @@
 {
     "name": "CircleCI CLI",
     "id": "circleci-cli",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Install the CircleCI CLI. Also installs the CircleCI extension for vscode.",
     "options": {
         "version": {
@@ -18,6 +18,14 @@
             "default": true,
             "description": "Attempt to install shell completions for bash & zsh.",
             "type": "boolean"
+        },
+        "telemetry": {
+            "default": "disable",
+            "type": "string",
+            "enum": [
+                "disable",
+                "enable"
+            ]
         }
     },
     "customizations": {
