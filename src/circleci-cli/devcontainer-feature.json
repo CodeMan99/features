@@ -21,6 +21,7 @@
         },
         "telemetry": {
             "default": "disable",
+            "description": "Configure telemetry setting.",
             "type": "string",
             "enum": [
                 "disable",
