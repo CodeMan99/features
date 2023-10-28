@@ -18,6 +18,14 @@
             "default": true,
             "description": "Attempt to install shell completions for bash & zsh.",
             "type": "boolean"
+        },
+        "telemetry": {
+            "default": "disable",
+            "type": "string",
+            "enum": [
+                "disable",
+                "enable"
+            ]
         }
     },
     "customizations": {

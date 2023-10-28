@@ -31,6 +31,9 @@ check_packages curl ca-certificates bash-completion
 
 curl -fLSs https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/install.sh | bash
 
+# Set telemetry or ignore if the subcommand does not exist.
+circleci --skip-update-check telemetry $TELEMETRY || true
+
 if [ "$COMPLETIONS" = "true" ]; then {
     # circleci bash completion
     mkdir -p /etc/bash_completion.d
