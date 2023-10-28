@@ -20,6 +20,7 @@ jobs:
           - ubuntu:latest
           - mcr.microsoft.com/devcontainers/base:ubuntu
           - mcr.microsoft.com/devcontainers/base:bullseye
+          - mcr.microsoft.com/devcontainers/base:bookworm
     steps:
       - uses: actions/checkout@v3
 
