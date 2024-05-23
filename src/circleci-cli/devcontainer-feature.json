@@ -1,7 +1,7 @@
 {
     "name": "CircleCI CLI",
     "id": "circleci-cli",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Install the CircleCI CLI. Also installs the CircleCI extension for vscode.",
     "options": {
         "version": {
