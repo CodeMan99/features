@@ -10,7 +10,7 @@
             "type": "string"
         },
         "destdir": {
-            "default": "/usr/local/bin/",
+            "default": "/usr/local/bin",
             "description": "Filesystem location of the exercism binary.",
             "type": "string"
         },
