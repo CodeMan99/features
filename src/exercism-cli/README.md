@@ -16,7 +16,7 @@ Install the exercism-cli.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Specify what version to install. | string | latest |
-| destdir | Filesystem location of the exercism binary. | string | /usr/local/bin/ |
+| destdir | Filesystem location of the exercism binary. | string | /usr/local/bin |
 | os | Specify the target operating system. | string | linux |
 | arch | Specify the target CPU architecture. | string | x86_64 |
 

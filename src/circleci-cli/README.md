@@ -16,7 +16,7 @@ Install the CircleCI CLI. Also installs the CircleCI extension for vscode.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Specify what version to install. | string | latest |
-| destdir | Filesystem location of the circleci binary. | string | /usr/local/bin/ |
+| destdir | Filesystem location of the circleci binary. | string | /usr/local/bin |
 | completions | Attempt to install shell completions for bash & zsh. | boolean | true |
 | telemetry | Configure telemetry setting. | string | disable |
 
