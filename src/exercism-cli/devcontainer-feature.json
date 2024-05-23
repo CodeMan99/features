@@ -1,7 +1,7 @@
 {
     "name": "Exercism CLI",
     "id": "exercism-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Install the exercism-cli.",
     "options": {
         "version": {
@@ -10,7 +10,7 @@
             "type": "string"
         },
         "destdir": {
-            "default": "/usr/local/bin/",
+            "default": "/usr/local/bin",
             "description": "Filesystem location of the exercism binary.",
             "type": "string"
         },

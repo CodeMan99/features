@@ -3,10 +3,10 @@
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "circleci-cli": {
-                "destdir": "/usr/bin/"
+                "destdir": "/usr/bin"
             },
             "exercism-cli": {
-                "destdir": "/usr/bin/"
+                "destdir": "/usr/bin"
             }
         }
     }
