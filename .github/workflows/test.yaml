@@ -18,7 +18,8 @@ jobs:
         baseImage:
           - debian:latest
           - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - mcr.microsoft.com/devcontainers/base:ubuntu-22.04
+          - mcr.microsoft.com/devcontainers/base:ubuntu-24.04
           - mcr.microsoft.com/devcontainers/base:bullseye
           - mcr.microsoft.com/devcontainers/base:bookworm
     steps:
