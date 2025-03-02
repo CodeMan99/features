@@ -1,0 +1,12 @@
+{
+    "denoland_deno__debian__custom_user": {
+        "image": "denoland/deno:debian",
+        "remoteUser": "jsr",
+        "features": {
+            "deno-cache": {},
+            "ghcr.io/devcontainers/features/common-utils:2": {
+                "username": "jsr"
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "id": "deno-cache",
+    "name": "Deno cache setup",
+    "version": "0.1.0",
+    "containerEnv": {
+        "DENO_DIR": "/deno-dir"
+    },
+    "options": {
+        "username": {
+            "description": "Add the 'deno' group to the given non-root user. Defaults to the value of `remoteUser`.",
+            "default": "automatic",
+            "type": "string"
+        }
+    },
+    "mounts": [
+        {
+            "source": "deno-cache-${devcontainerId}",
+            "target": "/deno-dir",
+            "type": "volume"
+        }
+    ],
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
