@@ -1,7 +1,9 @@
 {
     "id": "deno-cache",
     "name": "Deno cache setup",
-    "version": "0.1.0",
+    "version": "0.1.1",
+    "documentationURL": "https://github.com/CodeMan99/features/tree/main/src/deno-cache",
+    "description": "Create a docker named volume at /deno-dir",
     "containerEnv": {
         "DENO_DIR": "/deno-dir"
     },
