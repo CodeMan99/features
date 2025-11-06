@@ -7,7 +7,7 @@ Create a docker named volume at /deno-dir
 
 ```json
 "features": {
-    "ghcr.io/CodeMan99/features/deno-cache:0": {}
+    "ghcr.io/codeman99/features/deno-cache:0": {}
 }
 ```
 
