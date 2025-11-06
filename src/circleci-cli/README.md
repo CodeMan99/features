@@ -7,7 +7,7 @@ Install the CircleCI CLI. Also installs the CircleCI extension for vscode.
 
 ```json
 "features": {
-    "ghcr.io/CodeMan99/features/circleci-cli:1": {}
+    "ghcr.io/codeman99/features/circleci-cli:1": {}
 }
 ```
 

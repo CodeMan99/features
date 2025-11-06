@@ -1,0 +1,44 @@
+{
+    "id": "elm-lang",
+    "name": "Elm Language Compiler (via Github Releases)",
+    "version": "0.1.0",
+    "documentationURL": "https://github.com/CodeMan99/features/tree/main/src/elm-lang",
+    "description": "Install the elm language compiler and related tools",
+    "options": {
+        "version": {
+            "default": "0.19.1",
+            "description": "Specify the compiler version",
+            "type": "string"
+        },
+        "elmPrefix": {
+            "default": "/usr/local/bin",
+            "description": "Where the \"elm\" binary will be installed",
+            "type": "string"
+        },
+        "installFormat": {
+            "default": true,
+            "description": "Install the \"elm-format\" command (via npm if installed)",
+            "type": "boolean"
+        },
+        "installReview": {
+            "default": true,
+            "description": "Install the \"elm-review\" command (via npm if installed)",
+            "type": "boolean"
+        },
+        "installTest": {
+            "default": true,
+            "description": "Install the \"elm-test\" command (via npm if installed)",
+            "type": "boolean"
+        }
+    },
+    "customizations": {
+		"vscode": {
+			"extensions": [
+				"Elmtooling.elm-ls-vscode"
+			]
+		}
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/node"
+    ]
+}

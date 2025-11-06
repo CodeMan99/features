@@ -1,0 +1,33 @@
+{
+    "elm__debian__with_npm_tools": {
+        "image": "debian:trixie",
+        "features": {
+            "elm-lang": {},
+            "ghcr.io/devcontainers/features/node:1": {
+                "version": "lts",
+                "nodeGypDependencies": false
+            }
+        }
+    },
+    "elm__ubuntu__with_npm_tools": {
+        "image": "ubuntu:noble",
+        "features": {
+            "elm-lang": {
+                "installFormat": false,
+                "installReview": false,
+                "installTest": true
+            },
+            "ghcr.io/devcontainers/features/node:1": {
+                "version": "lts",
+                "nodeGypDependencies": false
+            }
+        }
+    },
+    "elm__javascript-node__with_npm_tools": {
+        "image": "mcr.microsoft.com/devcontainers/javascript-node:4-24-bookworm",
+        "remoteUser": "node",
+        "features": {
+            "elm-lang": {}
+        }
+    }
+}
