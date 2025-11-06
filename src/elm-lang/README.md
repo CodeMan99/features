@@ -7,7 +7,7 @@ Install the elm language compiler and related tools
 
 ```json
 "features": {
-    "ghcr.io/codeman99/features/elm-lang:0": {}
+    "ghcr.io/CodeMan99/features/elm-lang:0": {}
 }
 ```
 

@@ -7,7 +7,7 @@ Install the exercism-cli.
 
 ```json
 "features": {
-    "ghcr.io/codeman99/features/exercism-cli:1": {}
+    "ghcr.io/CodeMan99/features/exercism-cli:1": {}
 }
 ```
 
